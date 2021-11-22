@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --youtube-red: #f00;
+    --primary-text-color: #030303;
+    --secondary-text-color: #606060;
+    --grey-color-a: #f9f9f9;
+    --grey-color-b: #f1f1f1;
+    --grey-color-c: #e9e9e9;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: var(--primary-text-color);
+    position: relative;
+    background: var(--grey-color-a);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100%;
+}
+h4 {
+    font-weight: 500;
+}
+form {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: sticky;
+}
+
+/* Header - Logo */
+header .logo {
+    display: flex;
+}
+header .logo span {
+    cursor: pointer;
+}
+header .logo span:not(.material-icons-outlined) {
+    font-size: .6em;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+header .logo img {
+    height: 23px;
+    margin-left: 20px;
+    position: relative;
+    margin: auto 0 auto 20px;
+}
+
+/* Header - Search Form */
+header .search {
+    display: flex;
+    align-items: center;
+    flex-basis: 45%;
+}
+header .search form {
+    width: 100%;
+    position: relative;
+}
+header .search form input {
+    border: 1px solid var(--grey-color-c);
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    padding-right: 50px;
+}
+header .search form button {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 0 15px;
+}
+header .search > span {
+    background: var(--grey-color-b);
+    padding: 8px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Header User Options Area */
+header .user-options {
+    justify-content: flex-end;
+    text-align: right;
+}
+header .user-options ul {
+    display: flex;
+    align-items: center;
+}
+header .user-options ul li {
+    margin-left: 20px;
+}
+header .user-options ul li img {
+    height: 30px;
+    border-radius: 50%
+}
+
+/* Main - Navigation Section */
+main {
+    display: flex;
+}
+main .nav-section {
+    flex: 1 18%;
+    background: #fff;
+}
+main .nav-section ._block {
+    padding: 8px 0;
+    margin-right: 10px;
+    border-bottom: 1px solid var(--grey-color-c);
+}
+main .nav-section ._block ._title {
+    color: var(--secondary-text-color);
+    font-size: .95em;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+main .nav-section ._block ul li a {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 10px 30px;
+    font-size: .95em;
+}
+main .nav-section ._block ul li a:hover {
+    background: var(--grey-color-c);
+}
+main .nav-section ._block ul li .material-icons-outlined {
+    margin-right: 20px;
+}
+main .nav-section ._block ul li img {
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+main .nav-section ._copyright-area {
+    font-size: .8em;
+    font-weight: 500;
+    padding: 10px 5px 10px 30px;
+}
+main .nav-section ._copyright-area div {
+    padding: 10px 0;
+}
+main .nav-section ._copyright-area div ul li {
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: 2px;
+}
+main .nav-section ._copyright-area ._copyright p {
+    margin: 0;
+    color: #909090;
+    font-weight: normal;
+}
+
+/* Main - Main Body */
+main .main-section {
+    flex: 2 80%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-content: flex-start;
+}
+
+/* Main - Pills Bar */
+main .main-section ._pills-bar {
+    grid-column: 1 / 13;
+    background: #fff;
+    border-top: 1px solid var(--grey-color-c);
+    border-bottom: 1px solid var(--grey-color-c);
+    padding: 10px;
+}
+main .main-section ._pills-bar ul {
+    display: flex;
+    justify-content: flex-start;
+}
+main .main-section ._pills-bar ul li {
+    white-space: nowrap;
+}
+main .main-section ._pills-bar ul li a {
+    background: var(--grey-color-b);
+    padding: 6px 10px;
+    display: block;
+    border-radius: 20px;
+    margin-right: 10px;
+    border: 1px solid rgba(3, 3, 3, 0.2);
+    font-size: .95em;
+    color: var(--primary-text-color);
+}
+
+/* Main - Body Section */
+main .main-section ._body {
+    grid-column: 1 / 13;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+main .main-section ._body ._video {
+    width: 100%;
+    margin-bottom: 40px;
+    flex-basis: 24%;
+}
+
+/* Video Hover Effect */
+main .main-section ._body ._video:hover ._thumb img:last-child {
+    z-index: 2;
+}
+main .main-section ._body ._video ._thumb{
+    position: relative;
+}
+main .main-section ._body ._video ._thumb img:nth-child(odd) {
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+main .main-section ._body ._video ._thumb img:nth-child(even) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+main .main-section ._body ._video ._meta > span {
+    visibility: hidden;
+}
+main .main-section ._body ._video:hover ._meta > span {
+    visibility: visible;
+}
+/* ------ */
+
+main .main-section ._body ._video ._meta {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+main .main-section ._body ._video ._meta img {
+    border-radius: 50%;
+    width: 40px;
+}
+main .main-section ._body ._video ._meta ._details {
+    margin-left: 10px;
+    flex-basis: 95%;
+}
+main .main-section ._body ._video ._meta ._details h4 {
+    margin: 0 0 10px 0; 
+}
+main .main-section ._body ._video ._meta ._details p {
+    margin: 0 0 2px 0;
+    font-size: .9em;
+    color: var(--secondary-text-color);
+}
+main .main-section ._body ._video ._meta ._details p span {
+    font-size: .9em;
+    vertical-align: middle;
+}
+main .main-section ._body ._video ._meta ._details p._live-now{
+    border-radius: 0.25em;
+    border: 1px solid var(--youtube-red);
+    color: var(--youtube-red);
+    display: inline-block;
+    margin: 3px 0;
+    font-size: .8em;
+    padding: 2px 4px;
+}
+
+
+/* Mobile Screen Media Queries */
+@media screen and (max-width: 767px) {
+    header .search {
+        display: none;
+    }
+    main .main-section ._body {
+        display: block;
+        padding: 20px;
+    }
+    main .nav-section {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        z-index: 3;
+        display: none;
+    }    
+    main .nav-section ._block ul li .material-icons-outlined {
+        margin-right: 20px !important;
+    }
+    main .nav-section ._block ul li span:not(.material-icons-outlined) {
+        display: flex !important;
+    }
+    main .nav-section ._copyright-area {
+        display: block !important;
+    }
+    main .main-section {
+        flex-basis: 0;
+    }
+}
+
+/* Laptop (Smaller) Screen Media Queries */
+@media screen and (max-width: 1024px) {
+    main .main-section ._body {
+        padding: 20px;
+    }
+    main .main-section ._body ._video {
+        flex-basis: 49% !important;
+        width: 100%;
+    }
+}
+
+/* Laptop (Larger) Screen Media Queries */
+@media screen and (max-width: 1250px) {
+    /* Main - Navigation Area */
+    main .nav-section {
+        flex: 1 1% !important;
+    }
+    main .nav-section ._block {
+        margin: 0;
+        border: none;
+    }
+    main .nav-section ._block ._title {
+        display: none;
+    }
+    main .nav-section ._block ul li span:not(.material-icons-outlined) {
+        display: none;
+    }
+    main .nav-section ._block ul li a {
+        padding-right: 0;
+    }
+    main .nav-section ._block ul li .material-icons-outlined {
+        margin: 0;
+    }
+    main .nav-section ._copyright-area {
+        display: none;
+    }
+
+    /* Main - Main Body */
+    main .main-section {
+        flex: 2 99%;
+    }
+    main .main-section ._body {
+        padding: 20px;
+    }
+    main .main-section ._body ._video {
+        flex-basis: 32.5%;
+        width: 100%;
+    }
+    main .main-section ._body ._video ._meta ._details h4 {
+        font-size: .9em;
+    }
+}
+
+/* 4k Devices Screen Media Queries */
+@media screen and (min-width: 1700px) {
+    main .nav-section {
+        flex: 1 15% !important;
+    }
+    main .main-section {
+        flex: 2 85%;
+    }
+}
