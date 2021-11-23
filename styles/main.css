@@ -59,7 +59,6 @@ header .logo span:not(.material-icons-outlined) {
 }
 header .logo img {
     height: 23px;
-    margin-left: 20px;
     position: relative;
     margin: auto 0 auto 20px;
 }
@@ -182,6 +181,7 @@ main .main-section ._pills-bar {
     border-top: 1px solid var(--grey-color-c);
     border-bottom: 1px solid var(--grey-color-c);
     padding: 10px;
+    overflow: hidden;
 }
 main .main-section ._pills-bar ul {
     display: flex;
@@ -280,16 +280,34 @@ main .main-section ._body ._video ._meta ._details p._live-now{
     padding: 2px 4px;
 }
 
+/* Mobile (Mid-sized) Screen Media Queries */
+@media screen and (max-width: 374px) {
+    /* Header - User Options */
+    header .user-options ul li {
+        margin-left: 5px;
+    }
+}
 
 /* Mobile Screen Media Queries */
 @media screen and (max-width: 767px) {
+    /* Header */
+    header {
+        padding: 10px;
+    }
+
+    /* Header - Logo */
+    header .logo img {
+        height: 18px;
+        margin-left: 5px;
+        position: relative;
+    }
+
+    /* Header - Search */
     header .search {
         display: none;
     }
-    main .main-section ._body {
-        display: block;
-        padding: 20px;
-    }
+
+    /* Main - Navigation Section */
     main .nav-section {
         position: absolute;
         width: 60%;
@@ -306,8 +324,17 @@ main .main-section ._body ._video ._meta ._details p._live-now{
     main .nav-section ._copyright-area {
         display: block !important;
     }
+
+    /* Main - Main Section */
+    main .main-section ._body {
+        display: block;
+        padding: 12px !important;
+    }
     main .main-section {
         flex-basis: 0;
+    }
+    main .main-section ._body ._video {
+        margin-bottom: 15px;
     }
 }
 
