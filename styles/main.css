@@ -181,7 +181,7 @@ main .main-section ._pills-bar {
     border-top: 1px solid var(--grey-color-c);
     border-bottom: 1px solid var(--grey-color-c);
     padding: 10px;
-    overflow: hidden;
+    overflow: scroll;
 }
 main .main-section ._pills-bar ul {
     display: flex;
