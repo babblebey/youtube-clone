@@ -9,11 +9,7 @@ This project was built in Plain CSS Flexbox and CSS Grid, which I had learnt wit
 - Font - Roboto (https://fonts.google.com/specimen/Roboto)
 - Pictures - These were saved from YouTube
 
-<<<<<<< HEAD
 # See Depoloyed Webpage Live
 - https://yt-clone-babblebey.netlify.app/
 
 You can follow me on my journey at https://instagram.com/babblebey 
-=======
-You can follow my journey at https://instagram.com/babblebey 
->>>>>>> 364c5e01a12bb217126eb9be138c1cd88ff81ca0
