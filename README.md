@@ -10,6 +10,6 @@ This project was built in Plain CSS Flexbox and CSS Grid, which I had learnt wit
 - Pictures - These were saved from YouTube
 
 # See Live Preview
-- https://yt-clone-babblebey.netlify.app/
+### ✨ [Live Preview](https://yt-clone-babblebey.netlify.app/)
 
 You can follow me on my journey at https://instagram.com/babblebey 
